@@ -1,0 +1,14 @@
+.popupwrp{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+button{
+    height: 35px;
+    width: 80px;
+    border-radius: 18px;
+    border: 1px solid #f44336;
+    background: #f44336;
+    color: white;
+}

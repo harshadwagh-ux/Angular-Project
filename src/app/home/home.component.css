@@ -1,3 +1,12 @@
+.homewrp{
+background-image: url(../../assets/sunset.jpg);
+    margin-top: -18px;
+    margin-bottom: -18px;
+}
+img{
+    padding: 12px;
+}
+
 ul{
     display: flex;
     padding: 0;
@@ -5,7 +14,7 @@ ul{
     flex-wrap: wrap;
     list-style-type: none;
     align-items: center;
-    background-color: cornsilk;
+    background-color: transparent;
 
 }
 

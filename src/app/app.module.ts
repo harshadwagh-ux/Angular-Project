@@ -7,7 +7,9 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
-// import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import { ContactUSComponent } from './contact-us/contact-us.component'
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -16,15 +18,18 @@ import { SearchComponent } from './search/search.component';
     FooterComponent,
     HomeComponent,
     SearchComponent,
+    ContactUSComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    MatIconModule,
+    MatDialogModule
     // MatInputModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ]
 })
 export class AppModule { }
