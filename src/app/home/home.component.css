@@ -1,0 +1,91 @@
+ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: center;
+    background-color: cornsilk;
+
+}
+
+ul li a{
+    height: 27rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+}
+
+li a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: .5rem;
+}
+
+.product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.origins{
+    flex: 9;
+}
+
+.origins span{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    color: gray;
+    font-size: .9rem;
+    margin-right: .3rem;
+    display: inline-block;
+}
+
+.cook-time{
+    font-size: .9rem;
+    flex: 3;
+    text-align: center;
+    background-color: whitesmoke;
+    color: gray;
+}
+
+.price{
+    color: gray;
+    margin-top: .2rem;
+}
+
+
+.rating {
+    display: inline-block;
+    font-size: 24px;
+}
+  .rating input {
+    display: none;
+  }
+  .star {
+    cursor: pointer;
+    color: #ccc;
+  }
+  .star:hover,
+  .star:hover ~ .star {
+    color: #ffcc00;
+  }
+  
+  .rating input:checked ~ .star:hover ~ .star ,.rating input:checked ~ .star{
+    color: #ffcc00;
+  }

@@ -1,0 +1,43 @@
+<app-search></app-search>
+<ul>
+    <li *ngFor="let Foods of foods">
+        <a>
+            <img src="{{Foods.imageUrl}}" alt="food">
+        <div class="content">
+            <div class="name">
+                {{Foods.name}}
+            </div>
+            <div class="star-rating" id="heart" onclick="toggleHeartColor()">
+                <span class="favorite {{Foods.favorite?'':'not'}}">❤️</span>
+            </div>
+            
+        </div>
+        <div class="rating">
+            <input type="radio" name="star" id="star1" value="1">
+            <label class="star" for="star1">&#9733;</label>
+            <input type="radio" name="star" id="star2" value="2">
+            <label class="star" for="star2">&#9733;</label>
+            <input type="radio" name="star" id="star3" value="3">
+            <label class="star" for="star3">&#9733;</label>
+            <input type="radio" name="star" id="star4" value="4">
+            <label class="star" for="star4">&#9733;</label>
+            <input type="radio" name="star" id="star5" value="5">
+            <label class="star" for="star5">&#9733;</label>
+          </div>
+            <div class="product-item-footer">
+                <div class="origins">
+                    <span *ngFor="let origin of Foods.origin">
+                    {{origin}}
+                    </span>
+                </div>
+                <div tooltip="Making Time" class="cook-time">
+                    <span>🕐</span>
+                    {{Foods.cookTime}}
+                </div>
+            </div>
+            <div class="price">
+                {{Foods.price|currency}}
+            </div>
+        </a>
+    </li>    
+</ul>
